@@ -30,3 +30,19 @@ header div a:hover {
   color: #2ecc71;
   transition: color 200ms;
 }
+
+main div {
+  text-align: center;
+  padding: 32px;
+}
+
+main div img {
+  border-radius: 50%;
+  border: 2px solid #2ecc71;
+  margin-bottom: 32px;
+}
+
+main div h1 {
+  font-size: 41px;
+  line-height: 52px;
+}

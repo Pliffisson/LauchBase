@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./assets/index.css">
   <title>Pliffisson Gomes</title>
 
@@ -14,16 +13,14 @@
 <body>
   <header>
     <div class="links">
-      <a href="#">About</a>
-      <a href="#">Classes</a>
+      <a href="index.html">About</a>
+      <a href="classes.html">Classes</a>
     </div>
   </header>
 
-  <main>
-    <div id="wrapper">
-      <h1>Aulas</h1>
-    </div>
-  </main>
+  <div id="wrapper">
+    <h1>Aulas</h1>
+  </div>
 
   <section class="cards">
 
@@ -105,22 +102,19 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="card_image-container">
-        <img src="https://img.youtube.com/vi/AJ5lW2yS0Fs/maxresdefault.jpg" alt="moto">
-      </div>
-      <div class="card_content">
-        <p>HD Breakout - 2016 Upgrades</p>
-      </div>
-      <div class="card_info">
-        <p>6:03 Minutos</p>
-        <p class="card_price">Free</p>
-      </div>
-    </div>
-
   </section>
 
-  <script src="https://kit.fontawesome.com/b22c22bfef.js" crossorigin="anonymous"></script>
+  <div class="modal-overlay active">
+    <div class="modal">
+      <a class="close-modal">
+        <span class="material-icons">close</span>
+      </a>
+
+      <div class="modal-content">
+        <!-- Video vai ficar aqui -->
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

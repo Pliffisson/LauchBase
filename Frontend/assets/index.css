@@ -129,7 +129,7 @@ header div {
 .modal .close-modal {
   color: black;
   position: absolute;
-  right: 16px;
+  right: 8px;
   top: 8px;
   cursor: pointer;
 }

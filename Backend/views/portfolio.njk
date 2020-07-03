@@ -16,83 +16,22 @@
 
   <section class="cards">
 
-    <div class="card" id="AJ5lW2yS0Fs">
-      <div class="card__image-container">
-        <img src="https://img.youtube.com/vi/AJ5lW2yS0Fs/maxresdefault.jpg" alt="moto">
-      </div>
-      <div class="card_content">
-        <p>HD Breakout - 2016 Upgrades</p>
-      </div>
-      <div class="card_info">
-        <p>6:03 Minutos</p>
-        <p class="card_price">Free</p>
-      </div>
-    </div>
+    {% for item in items %}
 
-    <div class="card" id="BnmG0IftEQ4">
-      <div class="card__image-container">
-        <img src="https://img.youtube.com/vi/BnmG0IftEQ4/maxresdefault.jpg" alt="moto">
+      <div class="card" id="{{item.id}}}">
+        <div class="card__image-container">
+          <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de {{item.title}}">
+        </div>
+        <div class="card_content">
+          <p>{{item.title}}</p>
+        </div>
+        <div class="card_info">
+          <p>{{item.duration}}</p>
+          <p class="card_price">{{item.price}}</p>
+        </div>
       </div>
-      <div class="card_content">
-        <p>HD Breakout - 2016 Upgrades</p>
-      </div>
-      <div class="card_info">
-        <p>6:03 Minutos</p>
-        <p class="card_price">Free</p>
-      </div>
-    </div>
 
-    <div class="card" id="vQwhbah2APw">
-      <div class="card__image-container">
-        <img src="https://img.youtube.com/vi/vQwhbah2APw/mqdefault.jpg" alt="moto">
-      </div>
-      <div class="card_content">
-        <p>HD Breakout - 2016 Upgrades</p>
-      </div>
-      <div class="card_info">
-        <p>6:03 Minutos</p>
-        <p class="card_price">Free</p>
-      </div>
-    </div>
-
-    <div class="card" id="E45YQdLQBY4">
-      <div class="card__image-container">
-        <img src="https://img.youtube.com/vi/E45YQdLQBY4/maxresdefault.jpg" alt="moto">
-      </div>
-      <div class="card_content">
-        <p>HD Breakout - 2016 Upgrades</p>
-      </div>
-      <div class="card_info">
-        <p>6:03 Minutos</p>
-        <p class="card_price">Free</p>
-      </div>
-    </div>
-
-    <div class="card" id="jOFctNhY8-Q">
-      <div class="card__image-container">
-        <img src="https://img.youtube.com/vi/jOFctNhY8-Q/maxresdefault.jpg" alt="moto">
-      </div>
-      <div class="card_content">
-        <p>HD Breakout - 2016 Upgrades</p>
-      </div>
-      <div class="card_info">
-        <p>6:03 Minutos</p>
-        <p class="card_price">Free</p>
-      </div>
-    </div>
-
-    <div class="card" id="I0RBmyN2euU">
-      <div class="card__image-container">
-        <img src="https://img.youtube.com/vi/I0RBmyN2euU/maxresdefault.jpg" alt="moto">
-      </div>
-      <div class="card_content">
-        <p>HD Breakout - 2016 Upgrades</p>
-      </div>
-      <div class="card_info">
-        <p>6:03 Minutos</p>
-        <p class="card_price">Free</p>
-      </div>
-    </div>
+    {% endfor %}
   </section>
 
   <div class="modal-overlay">

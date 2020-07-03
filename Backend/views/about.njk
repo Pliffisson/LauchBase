@@ -2,22 +2,26 @@
 
 {% block head %}
 
-  <title>Sobre - Pliffisson Gomes</title>
+  <title>Sobre -
+    {{ about.name }}</title>
 
 {% endblock %}
 
 {% block content %}
 
   <div id="wrapper">
-    <img src="https://avatars0.githubusercontent.com/u/8752955?s=460&u=1b7d0e9bd1ca441996d9e3734942dd6119db0e6e&v=4" alt="Pliffisson Gomes">
-    <h1>Pliffisson Gomes</h1>
-    <h2>Frontend Developer</h2>
-    <p>Developer Frontend focusing on web and mobile development using, html, css, javascript, node, react and react native technologies.</p>
+    <img src="{{ about.avatar_url }}" alt="Imagem de {{ about.name }}">
+    <h1>{{ about.name }}</h1>
+    <h2>{{ about.role }}</h2>
+    <p>{{ about.description }}</p>
   </div>
 
   <div id="links-footers" class="links">
-    <a href="https://github.com/pliffisson" target="_blank">Github</a>
-    <a href="https://linkedin.com/in/pliffisson-gomes-622b3551" target="_blank">Linkedin</a>
+
+    {% for link in about.links%}
+      <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+    {% endfor %}
+
   </div>
 
 {% endblock %}

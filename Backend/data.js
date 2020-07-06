@@ -4,6 +4,7 @@ module.exports = [
     title: "HD Breakout - 2016 Upgrades",
     duration: "6:03 Minutos",
     price: "Free",
+    featured: true,
   },
   {
     id: "BnmG0IftEQ4",
@@ -22,6 +23,7 @@ module.exports = [
     title: "HD Breakout - 2016 Upgrades",
     duration: "6:03 Minutos",
     price: "Free",
+    featured: true,
   },
   {
     id: "jOFctNhY8-Q",
@@ -34,5 +36,6 @@ module.exports = [
     title: "HD Breakout - 2016 Upgrades",
     duration: "6:03 Minutos",
     price: "Free",
+    featured: true,
   },
 ];

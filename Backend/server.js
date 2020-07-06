@@ -7,7 +7,7 @@ const server = express();
 const videos = require("./data");
 
 // ============ Carregando a estilização da pagina ===============
-server.use(express.static("public"));
+server.use(express.static("public")); // uso de middlewares
 
 server.set("view engine", "njk");
 

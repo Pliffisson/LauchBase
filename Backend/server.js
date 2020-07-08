@@ -42,6 +42,12 @@ server.get("/portfolio", function (req, res) {
   return res.render("portfolio", { items: videos });
 });
 
+server.get("/videos", function (req, res) {
+  const id = req.query.id;
+
+  res.send(id);
+});
+
 // ======== Servidor ===========
 server.listen(3000, function () {
   console.log("server is running");

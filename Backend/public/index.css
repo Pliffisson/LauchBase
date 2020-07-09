@@ -164,3 +164,9 @@ iframe {
   border-radius: 16px;
   top: -10px;
 }
+
+/* ============== Video Page ================== */
+.video {
+  margin: 0 auto;
+  max-width: 800px;
+}

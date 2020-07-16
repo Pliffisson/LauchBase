@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    {% block head %}
+    <head>
 
-    <title>Pliffisson Gomes</title>
+        {% block head %}
 
-    {% endblock %}
+            <title>Gym Manager</title>
 
-    <link rel="stylesheet" href="/index.css">
+        {% endblock %}
 
-</head>
+        <link rel="stylesheet" href="/index.css">
+        <link rel="shortcut icon" href="/icons8-haltere-24.png" type="image/x-icon">
 
-<body>
-    <header>
-        <div class="links">
-            <a href="/">Sobre</a>
-            <a href="/portfolio">Aulas</a>
-        </div>
-    </header>
+    </head>
 
-    {% block content %}{% endblock %}
+    <body>
+        <header>
+            <div class="links">
+                <a href="/" class="active">Instructors</a>
+                <a href="/members">Members</a>
+            </div>
+        </header>
 
-</body>
+        {% block content %}{% endblock %}
+
+    </body>
 
 </html>

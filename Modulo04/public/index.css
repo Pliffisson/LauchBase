@@ -131,7 +131,7 @@ header {
   color: #777;
   margin-right: 4px;
   margin-top: 8px;
-  display: inline-block;
+  display: inline-flex;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;

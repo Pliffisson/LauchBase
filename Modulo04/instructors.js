@@ -12,13 +12,21 @@ exports.post = function (req, res) {
     }
   }
 
-  //Criação da data de nascimento automatica
-  req.body.birth = Date.parse(req.body.birth);
+  let { avatar_url, birth, name, services, gender } = req.body;
 
-  //Criação de uma data automatica no cadastro
-  req.body.create_at = Date.now();
+  birth = Date.parse(birth);
+  const create_at = Date.now();
+  const id = Number(data.instructors.length + 1);
 
-  data.instructors.push(req.body);
+  data.instructors.push({
+    id,
+    avatar_url,
+    name,
+    birth,
+    gender,
+    services,
+    create_at,
+  });
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
     if (err) {

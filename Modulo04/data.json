@@ -1,34 +1,13 @@
 {
   "instructors": [
     {
-      "avatar_url": "http://pliffisson.com.br",
-      "name": "Pliffisson",
-      "birth": "2020-07-03",
-      "gender": "M",
-      "services": "Musculação"
-    },
-    {
-      "avatar_url": "http://levi.com.br",
-      "name": "Levi",
-      "birth": "2020-07-04",
-      "gender": "M",
-      "services": "Musculação"
-    },
-    {
+      "id": 1,
       "avatar_url": "http://google.com.br",
       "name": "Pliffisson",
-      "birth": "2020-07-27",
+      "birth": 447984000000,
       "gender": "M",
       "services": "Musculação",
-      "create_at": 1595375024674
-    },
-    {
-      "avatar_url": "http://google.com.br",
-      "name": "Leeli",
-      "birth": 1593907200000,
-      "gender": "M",
-      "services": "Musculação",
-      "create_at": 1595375612686
+      "create_at": 1595377868671
     }
   ]
 }

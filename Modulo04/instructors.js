@@ -1,7 +1,28 @@
 const fs = require("fs");
 const data = require("./data.json");
 
-//Requisições POST
+// Show
+exports.show = function (req, res) {
+  // req.params
+  const { id } = req.params;
+
+  const fondInstructor = data.instructors.find(function (instructor) {
+    return id == instructor.id;
+  });
+
+  if (!fondInstructor) return res.send("Instrutor não foi encontrado");
+
+  const instructor = {
+    ...fondInstructor,
+    birth: "",
+    services: fondInstructor.services.split(","),
+    create_at: "",
+  };
+
+  return res.render("instructors/show", { instructor });
+};
+
+// Create
 exports.post = function (req, res) {
   // Validação de dados
   const keys = Object.keys(req.body);

@@ -71,4 +71,6 @@ header {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  box-shadow: 0px 2px 6px -2px #2d3436;
 }

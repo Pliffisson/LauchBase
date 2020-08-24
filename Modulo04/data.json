@@ -1,0 +1,32 @@
+{
+  "instructors": [
+    {
+      "avatar_url": "htpp://google.com.br",
+      "name": "Carlos Gomes",
+      "birth": "1988-04-13",
+      "gender": "M",
+      "services": "Musculação"
+    },
+    {
+      "avatar_url": "http://google.com.br",
+      "name": "Pliffisson Gomes",
+      "birth": "1984-03-13",
+      "gender": "M",
+      "services": "Musculação"
+    },
+    {
+      "avatar_url": "http://google.com.br",
+      "name": "Levi Gomes",
+      "birth": "1982-06-13",
+      "gender": "M",
+      "services": "Musculação"
+    },
+    {
+      "avatar_url": "http://google.com.br",
+      "name": "Levi Gomes Silva",
+      "birth": "1982-06-13",
+      "gender": "M",
+      "services": "Musculação"
+    }
+  ]
+}

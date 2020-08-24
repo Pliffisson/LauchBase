@@ -21,10 +21,10 @@ exports.post = function (req, res) {
   data.instructors.push({
     id,
     avatar_url,
-    birth,
     name,
-    services,
+    birth,
     gender,
+    services,
     created_at,
   });
 

@@ -2,48 +2,12 @@
   "instructors": [
     {
       "id": 1,
-      "avatar_url": "http://google.com.br",
-      "birth": 447984000000,
-      "name": "Pliffisson Gomes",
-      "services": "Musculação",
-      "gender": "M",
-      "created_at": 1598309256149
-    },
-    {
-      "id": 2,
-      "avatar_url": "http://api.google.com.br",
-      "name": "Pliffisson Gomes",
-      "birth": 447984000000,
+      "avatar_url": "http://instagram.com.br",
+      "name": "Levi dos santos gomes",
+      "birth": 1545264000000,
       "gender": "M",
       "services": "Musculação",
-      "created_at": 1598564670872
-    },
-    {
-      "id": 3,
-      "avatar_url": "http://api.node.com",
-      "name": "Pliffisson Gomes",
-      "birth": 447984000000,
-      "gender": "M",
-      "services": "Musculação",
-      "created_at": 1598564733830
-    },
-    {
-      "id": 4,
-      "avatar_url": "http://api.com.br",
-      "name": "Pliffisson Gomes",
-      "birth": 447984000000,
-      "gender": "M",
-      "services": "Musculação",
-      "created_at": 1598564846390
-    },
-    {
-      "id": 5,
-      "avatar_url": "http://api.googl.eomc.br",
-      "name": "Pliffisson Gomes",
-      "birth": 447984000000,
-      "gender": "M",
-      "services": "Musculaçao, Box, Fit",
-      "created_at": 1598588042226
+      "created_at": 1598746294351
     }
   ]
 }

@@ -77,3 +77,32 @@ exports.edit = function (req, res) {
 
   return res.render("instructors/edit", { instructor });
 };
+
+// Put
+exports.put = function(req , res){
+  const { id } = req.body;
+  let index = 0
+
+  const foundInstructor = data.instructors.find(function (instructor, foundIndex) {
+    if (id == instructor.id) {
+      index = foundIndex
+      return true
+    }
+  });
+
+  if (!foundInstructor) return res.send("Instrutor não encontrado");
+
+  const instructor = {
+    ...foundInstructor,
+    ...req.body,
+    birth: Date.parse(req.body.birth)
+  }
+
+  date.instructors[index] = instructor
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+    if(err) return res.send("Erro ao salvar os dados do formulario")
+
+    return res.redirect(`/instructors/${id}`)
+  })
+}

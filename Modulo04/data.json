@@ -1,3 +1,22 @@
 {
-  "instructors": []
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/9374406/500x500",
+      "name": "Pliffisson Gomes",
+      "birth": 447984000000,
+      "gender": "M",
+      "services": "Musculação",
+      "created_at": 1599598344001
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/9374406/500x500",
+      "name": "Levi Gomes",
+      "birth": 1545264000000,
+      "gender": "M",
+      "services": "Musculação",
+      "created_at": 1599598373563
+    }
+  ]
 }

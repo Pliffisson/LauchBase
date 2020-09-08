@@ -79,9 +79,9 @@ exports.edit = function (req, res) {
 };
 
 // Put
-exports.put = function(req , res){
+exports.put = function(req, res){
   const { id } = req.body;
-  let index = 0
+  let index = 0;
 
   const foundInstructor = data.instructors.find(function (instructor, foundIndex) {
     if (id == instructor.id) {
@@ -98,11 +98,28 @@ exports.put = function(req , res){
     birth: Date.parse(req.body.birth)
   }
 
-  date.instructors[index] = instructor
+  data.instructors[index] = instructor;
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
     if(err) return res.send("Erro ao salvar os dados do formulario")
 
     return res.redirect(`/instructors/${id}`)
   })
+}
+
+// Delete
+exports.delete = function(req, res){
+  const { id } = req.body
+
+  const filteredInstructors = data.instructors.filter(function(instructor){
+    return instructor.id != id
+  })
+
+  data.instructors = filteredInstructors
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+    if (err) return res.send("Erro na gravação do arquivo")
+
+    return res.redirect("/instructors")
+  }) 
 }

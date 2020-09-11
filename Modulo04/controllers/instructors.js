@@ -1,11 +1,11 @@
 const fs = require("fs");
-const data = require("./data.json");
-const { age, date } = require("./utils");
+const data = require("../data.json");
+const { age, date } = require("../utils");
 
 // index
 exports.index = function (req, res) {
   return res.render("instructors/index", { instructors: data.instructors });
-}
+};
 
 // show
 exports.show = function (req, res) {
@@ -27,6 +27,10 @@ exports.show = function (req, res) {
   };
 
   return res.render("instructors/show", { instructor });
+};
+
+exports.create = function (req, res) {
+  return res.render("instructors/create");
 };
 
 // Create
@@ -84,14 +88,17 @@ exports.edit = function (req, res) {
 };
 
 // Put
-exports.put = function(req, res){
+exports.put = function (req, res) {
   const { id } = req.body;
   let index = 0;
 
-  const foundInstructor = data.instructors.find(function (instructor, foundIndex) {
+  const foundInstructor = data.instructors.find(function (
+    instructor,
+    foundIndex
+  ) {
     if (id == instructor.id) {
-      index = foundIndex
-      return true
+      index = foundIndex;
+      return true;
     }
   });
 
@@ -101,31 +108,31 @@ exports.put = function(req, res){
     ...foundInstructor,
     ...req.body,
     birth: Date.parse(req.body.birth),
-    id: Number(req.body.id)
-  }
+    id: Number(req.body.id),
+  };
 
   data.instructors[index] = instructor;
 
-  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
-    if(err) return res.send("Erro ao salvar os dados do formulario")
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
+    if (err) return res.send("Erro ao salvar os dados do formulario");
 
-    return res.redirect(`/instructors/${id}`)
-  })
-}
+    return res.redirect(`/instructors/${id}`);
+  });
+};
 
 // Delete
-exports.delete = function(req, res){
-  const { id } = req.body
+exports.delete = function (req, res) {
+  const { id } = req.body;
 
-  const filteredInstructors = data.instructors.filter(function(instructor){
-    return instructor.id != id
-  })
+  const filteredInstructors = data.instructors.filter(function (instructor) {
+    return instructor.id != id;
+  });
 
-  data.instructors = filteredInstructors
+  data.instructors = filteredInstructors;
 
-  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
-    if (err) return res.send("Erro na gravação do arquivo")
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
+    if (err) return res.send("Erro na gravação do arquivo");
 
-    return res.redirect("/instructors")
-  }) 
-}
+    return res.redirect("/instructors");
+  });
+};

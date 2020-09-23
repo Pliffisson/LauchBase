@@ -1,15 +1,15 @@
 {
   "members": [
     {
-      "avatar_url": "http://api.google.com.br",
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/9374406/500x500",
       "name": "Pliffisson Gomes",
       "email": "pliffissongomes@gmail.com",
       "birth": 447984000000,
       "gender": "M",
-      "blood": "A+",
-      "weight": "98",
-      "height": "175",
-      "id": 1
+      "blood": "B+",
+      "weight": "115",
+      "height": "185"
     }
   ],
   "instructors": [
